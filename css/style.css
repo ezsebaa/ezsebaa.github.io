@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+/* Animaciones personalizadas para cada color */
+@keyframes glow1 {
+  0%, 100% {
+    color: #4bcffa;
+    text-shadow: 0 0 12px #4bcffa, 0 0 50px #4bcffa, 0 0 100px #4bcffa;
+  }
+  10%, 90% {
+    color: #111;
+    text-shadow: none;
+  }
+}
+
+@keyframes glow2 {
+  0%, 100% {
+    color: #4bcffa;
+    text-shadow: 0 0 12px #4bcffa, 0 0 50px #4bcffa, 0 0 100px #4bcffa;
+  }
+  10%, 90% {
+    color: #111;
+    text-shadow: none;
+  }
+}
+
+@keyframes glow3 {
+  0%, 100% {
+    color: #4bcffa;
+    text-shadow: 0 0 12px #4bcffa, 0 0 50px #4bcffa, 0 0 100px #4bcffa;
+  }
+  10%, 90% {
+    color: #111;
+    text-shadow: none;
+  }
+}
+
+@keyframes glow4 {
+  0%, 100% {
+    color: #4bcffa;
+    text-shadow: 0 0 12px #4bcffa, 0 0 50px #4bcffa, 0 0 100px #4bcffa;
+  }
+  10%, 90% {
+    color: #111;
+    text-shadow: none;
+  }
+}
+
+@keyframes glow5 {
+  0%, 100% {
+    color: #a400fc;
+    text-shadow: 0 0 12px #a400fc, 0 0 50px #a400fc, 0 0 100px #a400fc;
+  }
+  10%, 90% {
+    color: #111;
+    text-shadow: none;
+  }
+}
+
+@keyframes glow6 {
+  0%, 100% {
+    color: #a400fc;
+    text-shadow: 0 0 12px #a400fc, 0 0 50px #a400fc, 0 0 100px #a400fc;
+  }
+  10%, 90% {
+    color: #111;
+    text-shadow: none;
+  }
+}
+
+@keyframes glow7 {
+  0%, 100% {
+    color: #a400fc;
+    text-shadow: 0 0 12px #a400fc, 0 0 50px #a400fc, 0 0 100px #a400fc;
+  }
+  10%, 90% {
+    color: #111;
+    text-shadow: none;
+  }
+}
+
+@keyframes glow8 {
+  0%, 100% {
+    color: #a400fc;
+    text-shadow: 0 0 12px #a400fc, 0 0 50px #a400fc, 0 0 100px #a400fc;
+  }
+  10%, 90% {
+    color: #111;
+    text-shadow: none;
+  }
+}
+
+@keyframes glow9 {
+  0%, 100% {
+    color: #a400fc;
+    text-shadow: 0 0 12px #a400fc, 0 0 50px #a400fc, 0 0 100px #a400fc;
+  }
+  10%, 90% {
+    color: #111;
+    text-shadow: none;
+  }
+}
+
+/* Clase general */
+.greetings {
+  font-size: 7rem;
+  font-weight: 900;
+}
+
+/* Aplicar cada animación a cada letra */
+.greetings > span:nth-child(1) {
+  animation: glow1 2.5s ease-in-out infinite;
+}
+.greetings > span:nth-child(2) {
+  animation: glow2 2.5s ease-in-out infinite;
+  animation-delay: .2s;
+}
+.greetings > span:nth-child(3) {
+  animation: glow3 2.5s ease-in-out infinite;
+  animation-delay: .4s;
+}
+.greetings > span:nth-child(4) {
+  animation: glow4 2.5s ease-in-out infinite;
+  animation-delay: .6s;
+}
+.greetings > span:nth-child(5) {
+  animation: glow5 2.5s ease-in-out infinite;
+  animation-delay: .8s;
+  margin-left: 40px;
+}
+.greetings > span:nth-child(6) {
+  animation: glow6 2.5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+.greetings > span:nth-child(7) {
+  animation: glow7 2.5s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+.greetings > span:nth-child(8) {
+  animation: glow8 2.5s ease-in-out infinite;
+  animation-delay: 1.4s;
+}
+.greetings > span:nth-child(9) {
+  animation: glow9 2.5s ease-in-out infinite;
+  animation-delay: 1.6s;
+}
+
+/* Botón estilo link */
+.button {
+  margin-top: 20px;
+}
+
+.button a {
+  background-color: #4bcffa;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 80px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: inline-block;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button a:hover {
+  background-color: #a400fc;
+  box-shadow: 0 0 20px #a400fc;
+}
+
+.button a:focus {
+  background-color: #a400fc;
+  box-shadow: 0 0 20px #a400fc;
+}
+
+/* Responsive */
+@media screen and (max-width:574px) {
+  .greetings {
+    display: block;
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .button a {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
